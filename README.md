@@ -9,6 +9,8 @@ GPU calculation doesn't count.
 <br>
 
 __language code & version:__
+- cpp:
+    - `gcc (tdm64-1) 9.2.0`
 - csharp:
     - `dotnet script 1.0.1 & dotnet 5.0.200`
 - golang
@@ -35,11 +37,31 @@ ___
 
 ## result
 
-__TBA__
+__cpp_pure:__
+```
+```
 
 <br>
 
 __csharp_pure:__
+```
+```
+
+<br>
+
+__golang_pure:__
+```
+```
+
+<br>
+
+__python_pure:__
+```
+```
+
+<br>
+
+__python_numba:__
 ```
 ```
 

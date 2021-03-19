@@ -1,4 +1,4 @@
-// gcc.exe (tdm64-1) 9.2.0
+// gcc (tdm64-1) 9.2.0
 #include <iostream>
 #include <vector>
 #include <chrono>
