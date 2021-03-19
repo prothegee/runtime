@@ -35,7 +35,13 @@ ___
 
 ## result
 
-<img src="./.docs/test-runtime-result-info.png">
+__TBA__
+
+<br>
+
+__csharp_pure:__
+```
+```
 
 <br>
 
