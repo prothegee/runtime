@@ -53,16 +53,41 @@ int main()
 
     for (int result = 0; result < CountNumber; result++)
     {
+        /*
+        - tricky
+
+        typedef std::chrono::high_resolution_clock Time;
+        typedef std::chrono::milliseconds ms;
+        typedef std::chrono::duration<float> fsec;
+
+        auto start = Time::now();
+        
+        auto stop = Time::now();
+
+        fsec fs = start - stop;
+        ms d = std::chrono::duration_cast<ms>(fs);
+
+        cout << "Test Count #" << (result + 1) << " | Took = " << fs.count() << " second\n";
+        cout << "Test Count #" << (result + 1) << " | Took = " << d.count() << " millisecond\n";
+        */
+
 
         auto start = high_resolution_clock::now();
         prime(32768);
         auto stop = high_resolution_clock::now();
 
-        // seconds doesn't show good result
         auto duration = duration_cast<milliseconds>(stop - start);
 
-        cout << "Test Count #" << (result + 1) << " | Took = " << duration.count() << " millisecond\n";
+        double time = duration.count();
+
+        double calculation[1] = {time};
+
+        double current = calculation[0] / 1000;
+
+        cout << "Test Count #" << (result + 1) << " | Took = " << current << " second\n";
+
     }
 
     return 0;
+
 }

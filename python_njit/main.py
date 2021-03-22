@@ -43,5 +43,5 @@ for result in range(CountNumber):
 
     print(
         "Test Count #{} | Took = {} second".format
-        (result + 1, (datetime.now()-start).total_seconds())
+        (result + 1, ((datetime.now()-start).total_seconds() / 1000))
     )
