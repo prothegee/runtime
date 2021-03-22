@@ -114,7 +114,7 @@ Test Count #9 | Took = 5.150834 second
 
 <br>
 
-__python:__
+__python_njit:__
 ```
 Test Count #1 | Took = 0.00025549 second
 Test Count #2 | Took = 0.0 second
